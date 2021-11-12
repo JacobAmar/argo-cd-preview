@@ -1,0 +1,11 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+   name: development-app-of-apps
+   namespace: argo-cd
+spec:
+   project: default
+   source:
+     repoURL: https://github.com/JacobAmar/argo-cd-preview.git
+     targetRevision: HEAD
+     path: helm
