@@ -8,7 +8,6 @@ spec:
    source:
      repoURL: https://github.com/JacobAmar/argo-cd-hello-world-chart.git
      targetRevision: HEAD
-     path: helm
    destination:
     server: https://kubernetes.default.svc
     namespace: development
